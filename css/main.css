@@ -1,0 +1,288 @@
+body{
+    background-color: #13101c;
+    color: white;
+    font-family: 'Rubik', system-ui, sans-serif;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-weight: 300;
+}
+.mi{
+    font-family: "Material Icons Outlined";
+}
+.header{
+    width: 100%;
+    height: 50px;
+    /*background-color: #0c0c13;*/
+    left: 0;
+    top: 0;
+    position: fixed;
+    padding: 10px;
+    line-height: 0;
+    display: inline-block;
+}
+.header #icon{
+    width: 48px;
+    border-radius: 100%;
+    border: 2px solid var(--primary);
+    -webkit-user-drag: none;
+}
+.header .link{
+    top: -40%;
+    position: relative;
+    margin: auto;
+    margin-left: 25px;
+    font-size: 20px;
+    display: inline-block;
+}
+.link_mob{
+    top: 50%;
+    position: relative;
+    margin: auto;
+    margin-left: 35px;
+    font-size: 36px;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    color: white;
+    transition: 0.2s ease;
+    user-select: none;
+}
+a:hover{
+    color: #eee;
+}
+a:active{
+    color: #ddd;
+}
+a:visited{
+    color: white
+}
+
+::selection{
+    background-color: var(--primary);
+    color: #f4f4f4;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    height: 150px;
+}
+
+.main{
+    width: 100%;
+    text-align: center;
+    margin-top: 15%;
+}
+.main h1{
+    font-size: 50px;
+    color: var(--primary);
+}
+.main p, span{
+    font-size: 20px;
+}
+.main #desc{
+    margin-top: -15px;
+}
+
+.buttons{
+    width: 100%;
+    text-align: center;
+    margin-top: 35px;
+    display: flex;
+    user-select: none;
+    justify-content: center;
+}
+.buttons a{
+    font-size: 20px;
+    background-color: #393550;
+    margin: 15px;
+    padding: 15px;
+    width: 350px;
+    min-width: 150px;
+}
+.buttons a:hover{
+    background-color: #4d4867;
+}
+.buttons a:active{
+    background-color: #70679a;
+}
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-size: 20px;
+}
+
+.footer .links{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    font-size: 15px;
+}
+
+.footer .links a{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    bottom: 10px;
+    position: relative;
+}
+
+.footer p{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.servers{
+    width: 100%;
+    text-align: center;
+    margin-top: 55px;
+    display: flex;
+    user-select: none;
+    justify-content: center;
+}
+
+.servers span{
+    font-size: 20px;
+    background-color: #393550;
+    margin: 24px;
+    padding: 15px;
+    width: 250px;
+    min-width: 150px;
+    cursor: default;
+}
+
+.terms{
+    margin-top: 5%;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.terms h1{
+    color: #0070FA
+}
+.terms p{
+    margin-top: -10px;
+}
+.terms h2{
+    font-size: 25px;
+}
+
+.terms h3{
+    font-size: 18px;
+}
+
+.terms ul{
+    margin-top: -5px;
+}
+.terms .begin{
+    margin-top: -5px;
+}
+
+.attention{
+    color: var(--error);
+}
+b{
+    font-weight: 400;
+}
+
+#cookie_banner{
+    transition: 1s;
+    width: 100%;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    background: rgba(16, 16, 21, 0.7);
+    position: fixed;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+}
+
+#cookie_banner div{
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background: #393550;
+    font-weight: 400;
+    margin: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+    align-items: center;
+    line-height: 40px;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#cookie_banner div:hover{
+    background: #4d4867;
+}
+#cookie_banner div:active{
+    background: #70679a;
+}
+
+.menu{
+    display: none;
+    font-size: 96px;
+    float: right;
+    margin-top: 75px;
+    margin-right: -35px;
+    transition: 0.3s;
+}
+
+.menu:hover{
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.mobile_menu{
+    display: none;
+}
+
+.countdown{
+    margin-top: 25%;
+    text-align: center;
+}
+
+.countdown h2{
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.countdown .units{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.countdown .units .unit{
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+}
+
+.countdown .units .unit h3{
+    font-weight: 400;
+    font-size: 64px;
+    color: var(--primary)
+}
+
+.countdown .units .unit p{
+    font-size: 28px;
+    margin-top: -65px;
+}
