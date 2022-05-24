@@ -1,0 +1,42 @@
+.processing-load {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    right: 0px;
+    height: 10px;
+}
+.processing-load-modal {
+    display: none;
+    background: #fff;
+    align-items: center;
+    padding: 2px;
+    margin: 15% 5px;
+    border-radius: 3px;
+    top: 0;
+    right: 0;
+}
+.processing-load-modal svg {
+	font-size: 28px;
+	transform: rotate(720deg);
+	animation: target 1s infinite linear;
+}
+.processing-load-bgactive {
+    display: -webkit-block; 
+    display: -moz-block;
+    display: -ms-block;
+    display: -o-block;
+    display: block;
+}
+.processing-load-active {
+  	display: -webkit-block; 
+    display: -moz-block;
+    display: -ms-block;
+    display: -o-block;
+    display: block;
+}
+.processing-load__text {
+	margin-left: 20px;
+	font-size: 15px;
+	font-weight: 600;
+}

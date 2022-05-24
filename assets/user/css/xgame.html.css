@@ -1,0 +1,491 @@
+.lottery-result-bodys {
+    margin: 100px auto;
+    width: 450px;
+    height: 145px;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.lottery-item {
+    display: block;
+    width: 620px;
+    overflow: hidden;
+    margin: 0 0 0 0;
+}
+.tablelol i {
+	font-size: 12em;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+}
+.lottery-result-body-texts {
+    font-size: 23px;
+    text-align: center;
+    color: #aaa;
+}
+/*.title{
+    display: block;
+    text-align: center;
+    margin: 0 0 15px 0;
+    padding: 0;
+    color: #a15727;
+    font-size: 36px;
+    font-weight: normal;
+    font-family: 'heinrichscriptregular';
+}*/
+
+    .first-title{
+        position: relative;
+        top: -25px;
+        margin: -10px 0 0 0;
+    }
+
+.market-item{
+    position: relative;
+    display: inline-block;
+    width: 276px;
+    height: 270px;
+    margin: 0 10px 14px 15px;
+    overflow: hidden;
+}
+
+.market-item-pic{
+    top: 0;
+    left: 0;
+	
+}
+
+.market-item-pic img{
+    position: absolute;
+    display: block;
+    top: 4px;
+    left: 6px;
+    width: 265px;
+    height: 177px;
+}
+
+    .market-item-pic img::before{
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 100%;
+        -webkit-box-shadow: inset 0px 0px 8px 3px rgba(0,0,0,0.75);
+        -moz-box-shadow: inset 0px 0px 8px 3px rgba(0,0,0,0.75);
+        box-shadow: inset 0px 0px 8px 3px rgba(0,0,0,0.75);
+    }
+
+.pic-blick{
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    width: 266px;
+    height: 110px;
+    background: url("/engine/modules/blade/xgame/temp/img/blick-bg.png") no-repeat;
+}
+
+.pic-border{
+    position: absolute;
+    width: 276px;
+    height: 187px;
+    background: url("../images/market-item-bg.png") no-repeat;
+}
+
+.item-overlay{
+    opacity: 0;
+    position: absolute;
+    top: 4px;
+    left: 6px;
+    width: 267px;
+    height: 177px;
+    background: rgba(135, 181, 93, .5) url("../images/basket.png") 94px 53px no-repeat;    -moz-transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.item-cost{
+    position: absolute;
+    display: block;
+    opacity: 0;
+    top: 135px;
+    width: 276px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.2);
+    font-weight: bold;
+    -moz-transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.market-item:hover .item-overlay,
+.market-item:hover .item-cost{
+    opacity: 1;
+}
+
+.item-name{
+    position: absolute;
+    top: 205px;
+    left: 0;
+    width: 278px;
+    padding: 8px 0 15px 0;
+    display: inline-block;
+    background: url("../images/item-name-bg.png") no-repeat;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-shadow: 0 -1px 0 rgba(78,123,41,.75);
+}
+
+.market-item .item-name{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.item-price{
+    position: absolute;
+    display: block;
+    top: 161px;
+    left: 100px;
+    width: 74px;
+    padding: 15px 0;
+    background: url("../images/cost.png") no-repeat;
+    text-align: center;
+    font-size: 11px;
+    font-weight: bold;
+    color: #4c130d;
+    z-index: 10;
+}
+
+
+.lottery-wrapper{
+
+}
+
+    .lottery{
+        padding: 20px 0;
+        background: url("../images/lottery-center.png") center repeat-y;
+        text-align: center;
+    }
+
+        .lottery-bg{
+            position: relative;
+            width: 989px;
+            margin: 2% auto 0 auto;
+            background: url("../images/lottery-top.png") top no-repeat,
+                        url("../images/lottery-bottom.png") bottom no-repeat;
+            padding: 10px 0 20px 0;
+        }
+
+        .lottery p{
+            text-transform: uppercase;
+            color: #fff;
+            text-shadow: 0 1px 2px rgba(0,0,0,.79);
+        }
+
+            .lottery p a{
+                color: #336699;
+                text-decoration: none;
+            }
+
+        p.gold{
+            color: #eeab31;
+            font-size: 14px;
+            text-shadow: 0 1px 2px rgba(0,0,0,.79);
+        }
+
+        .lottery-game {
+            position: relative;
+            display: inline-block;
+            /*width: 638px;*/
+            height: 140px;
+            border: 1px solid rgb(194, 200, 203);
+            background: rgb(208, 214, 218) none repeat scroll 0% 0%;
+            box-shadow: 0px 0px 10px rgba(121, 106, 238, 0.53) inset;
+            /* margin: 25px 0px 0px; */
+            overflow: hidden;
+        }
+     .lottery-game-elements {
+    position: relative;
+    margin-top: 10px;
+    width: 999999px;
+}
+
+        .lottery-close{
+            display: block;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 16px;
+            height: 16px;
+            background: url("../images/close.png") no-repeat;
+            cursor: pointer;
+        }
+
+        .green-btn{
+            display: inline-block;
+            width: 200px;
+            height: 40px;
+            background: url("../images/green.png") no-repeat;
+            cursor: pointer;
+        }
+
+            .green-btn[data-selected] {
+                background: url("../images/green-selected.png") no-repeat;
+            }
+
+        .gold-btn{
+            display: inline-block;
+            width: 200px;
+            height: 40px;
+            background: url("../images/yellow.png") no-repeat;
+            cursor: pointer;
+        }
+
+            .gold-btn[data-selected] {
+                background: url("../images/yellow-selected.png") no-repeat;
+            }
+
+        .red-btn{
+            display: inline-block;
+            width: 200px;
+            height: 40px;
+            background: url("../images/red.png") no-repeat;
+            cursor: pointer;
+        }
+
+            .red-btn[data-selected] {
+                background: url("../images/red-selected.png") no-repeat;
+            }
+
+         .big-play {
+    display: inline-block;
+    width: 336px;
+    height: 55px;
+    padding: 0px 0 0 0;
+    background: url(../images/big-btn.png) no-repeat;
+    cursor: pointer;
+    color: #c1966c;
+    line-height: 58px;
+    font-size: 17px;
+    font-weight: bold;
+    text-shadow: 1px 2px 2px rgba(0,0,0,.45);
+    text-transform: uppercase;
+}
+
+    .hr {
+    display: inline-block;
+    /*width: 590px;*/
+    height: 4px;
+    background: url("../images/sep.png") no-repeat;
+    }
+
+        .lottery-items{
+            display: block;
+            width: 620px;
+            clear: both;
+            overflow: hidden;
+            margin: 0 0 0 0;
+        }
+
+             .lottery-element{
+                position: relative;
+                width: 115px;
+                height: 145px;
+                float: left;
+                margin: 4px;
+            }
+ 
+                .lottery-element-slider {
+                    width: 113px;
+                    min-width: 113px;
+                    height: 110px!important;
+                    line-height: 110px;
+                    font-weight: 600;
+                    font-size: 17pt;
+                    background: -webkit-radial-gradient(#796aee00, #796aee73);
+                    background: -o-radial-gradient(#796aee00, #796aee73);
+                    background: -moz-radial-gradient(#796aee00, #796aee73);
+                    background: radial-gradient(#796aee00, #796aee73);
+                    border: 2px solid #796aee61;
+                    color: #eee;
+                }
+
+                .lottery-element img{
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    width: 115px;
+                    height: 115px;
+                }
+                
+                .description {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    left: 0;
+    bottom: 0;
+    border: 1px solid #5C892A;
+    background: #99CC61;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 );
+    font-size: 11px;
+    line-height: 2;
+    color: #fff;
+    text-align: left;
+    padding: 3px 0 0 5px;
+    box-sizing: border-box;
+    text-shadow: 1px 1px 0 #000;
+}
+
+        .line_lot{
+            position: absolute;
+            top: -2px;
+            left: 49%;
+            width: 10px;
+            height: 140px;
+            background: url("../images/line.png") no-repeat;
+        }
+
+.lottery-result {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .825);
+    overflow: auto;
+    z-index: 999999999;
+}
+
+.lottery-result-body {
+    margin: 50px auto;
+    width: 400px;
+    height: 400px;
+    padding: 25px;
+    background-color: #E1DBDB;
+    border-radius: 5%;
+}
+
+        .lottery-result-body-text {
+            font-size: 16px;
+            text-align: center;
+            color: #aaa;
+        }
+
+        .lottery-result-body-title {
+			padding-top: 30px;
+			padding-bottom: 10px;
+			font-size: 22px;
+			text-align: center;
+			color: #98D81E;
+		}
+
+.lottery-result-body-image {
+    margin: auto;
+    width: 250px;
+    border: solid 2px #B59E9E;
+    border-radius: 10%;
+    height: 250px;
+    background: -webkit-linear-gradient(to right, #f7f7f7 0%, #dfe0e5 6%, #bfc1cb 49%, #e0e2e6 93%, #f7f7f7 100%);
+    background: -moz-linear-gradient(to right, #f7f7f7 0%, #dfe0e5 6%, #bfc1cb 49%, #e0e2e6 93%, #f7f7f7 100%);
+    background: -o-linear-gradient(to right, #f7f7f7 0%, #dfe0e5 6%, #bfc1cb 49%, #e0e2e6 93%, #f7f7f7 100%);
+    background: -ms-linear-gradient(to right, #f7f7f7 0%, #dfe0e5 6%, #bfc1cb 49%, #e0e2e6 93%, #f7f7f7 100%);
+    background: linear-gradient(to right, #E1DBDB 0%, #E1DBDB 6%, #E1DBDB 49%, #E1DBDB 93%, #E1DBDB 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#f7f7f7',GradientType=1 );
+}
+
+            .lottery-result-body-image > img {
+                width: 100%;
+                height: 100%;
+            }
+
+        .lottery-result-body-buttons {
+            padding-top: 25px;
+            text-align: center;
+        }
+
+           .lottery-result-body-buttons > button {
+    margin: 0px 5px;
+    border: solid #77AB3E;
+    border-radius: 5%;
+    padding: 7px 30px;
+    background-color: #8cc152;
+    font-family: inherit;
+    font-size: 16px;
+    color: #fff;
+}
+.kd-message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 3px;
+  z-index: 99999999;
+}
+.kd-message .kd-message-window {
+    margin: auto;
+    width: 450px;
+    border-radius: 1%;
+    border: solid 2px #888888;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #FFFFFF;
+    overflow: hidden;
+}
+.kd-message .kd-message-window .kd-message-window-text {
+    font-size: 19px;
+    padding-bottom: 20px;
+    word-wrap: break-word;
+    color: black;
+}
+.kd-message .kd-message-window .kd-message-window-text small {
+    display: block;
+    font-size: 14px;
+    color: #eee;
+    color: #00FF0C;
+}
+.kd-message .kd-message-window .kd-message-window-buttons {
+  float: right;
+  overflow: hidden;
+  margin-bottom: 0 !important;
+}
+.kd-message .kd-message-window .kd-message-window-buttons > div {
+  float: left;
+  margin-left: 10px;
+}
+.kd-message .kd-message-window .kd-message-window-buttons > div > button {
+  display: inline-block;
+  width: auto;
+  height: 40px;
+  max-height: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #8cc152;
+  line-height: 40px;
+  border: none;
+  border-radius: 5%;
+  color: #eee;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+.kd-message .kd-message-window .kd-message-window-buttons > div > button:hover {
+  background-color: #a0d468;
+}

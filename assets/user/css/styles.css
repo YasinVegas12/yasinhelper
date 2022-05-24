@@ -1,0 +1,331 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "dashboard";
+  src:url("../fonts/dashboard.eot");
+  src:url("../fonts/dashboard.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/dashboard.woff") format("woff"),
+    url("../fonts/dashboard.ttf") format("truetype"),
+    url("../fonts/dashboard.svg#dashboard") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: #999;
+}
+::-webkit-scrollbar-track-piece {
+    background-color: #222222;
+}
+::-webkit-scrollbar-thumb {
+    height: 55px;
+    background-color: #52595d;
+    border-radius: 1px;
+}
+::-webkit-scrollbar-corner {
+  background-color: #52595d;
+}
+::-webkit-resizer {
+  background-color: #666;
+}
+
+select option:disabled {
+  background: #dfdfdf;
+}
+
+[data-icon]:before {
+  font-family: "dashboard" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "dashboard" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+  content: "\62";
+}
+.icon-form:before {
+  content: "\61";
+}
+.icon-list:before {
+  content: "\63";
+}
+.icon-presentation:before {
+  content: "\65";
+}
+.icon-bill:before {
+  content: "\66";
+}
+.icon-check:before {
+  content: "\67";
+}
+.icon-list-1:before {
+  content: "\68";
+}
+.icon-padnote:before {
+  content: "\69";
+}
+.icon-pencil-case:before {
+  content: "\6a";
+}
+.icon-user:before {
+  content: "\6b";
+}
+.icon-bars:before {
+  content: "\6c";
+}
+.icon-line-chart:before {
+  content: "\70";
+}
+.icon-flask:before {
+  content: "\6d";
+}
+.icon-grid:before {
+  content: "\6e";
+}
+.icon-picture:before {
+  content: "\6f";
+}
+.icon-website:before {
+  content: "\71";
+}
+.icon-screen:before {
+  content: "\72";
+}
+.icon-interface-windows:before {
+  content: "\73";
+}
+.icon-clock:before {
+  content: "\74";
+}
+.icon-rss-feed:before {
+  content: "\75";
+}
+.icon-mail:before {
+  content: "\64";
+}
+.icon-ios-email-outline:before {
+  content: "\76";
+}
+.icon-paper-airplane:before {
+  content: "\77";
+}
+.icon-ios-email:before {
+  content: "\78";
+}
+.icon-page:before {
+  content: "\41";
+}
+.icon-close:before {
+  content: "\79";
+}
+.icon-search:before {
+  content: "\7a";
+}
+
+/*custom*/
+
+.profile-image{
+  max-height: 30px;
+  max-width: 30px;
+  border-radius: 5px;
+}
+
+.bal-info {
+  font-weight: 400;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 1.25rem;
+  background-color: #777980;
+}
+
+.font-size-for-mobile-18 {
+    font-size: 18px !important;
+}
+.font-size-for-mobile-18-5 {
+    font-size: 18px !important;
+}
+.font-size-for-mobile-17 {
+    font-size: 17px !important;
+}
+.font-size-for-mobile-17-5 {
+    font-size: 17.5px !important;
+}
+.font-size-for-mobile-16 {
+    font-size: 16px !important;
+}
+.font-size-for-mobile-16-5 {
+  font-size: 16.5px !important;
+}
+.font-size-for-mobile-15 {
+  font-size: 15px !important;
+}
+.font-size-for-mobile-15-5 {
+  font-size: 15.5px !important;
+}
+.font-size-for-mobile-14 {
+  font-size: 14px !important;
+}
+.font-size-for-mobile-14-5 {
+  font-size: 14.5px !important;
+}
+.font-size-for-mobile-13 {
+  font-size: 13px !important;
+}
+.font-size-for-mobile-13-5 {
+  font-size: 13.5px !important;
+}
+.font-size-for-mobile-12 {
+  font-size: 12px !important;
+}
+.font-size-for-mobile-12-5 {
+  font-size: 12.5px !important;
+}
+.font-size-for-mobile-11 {
+  font-size: 11px !important;
+}
+.font-size-for-mobile-11-5 {
+  font-size: 11.5px !important;
+}
+.font-size-for-mobile-10 {
+  font-size: 10px !important;
+}
+.font-size-for-mobile-10-5 {
+  font-size: 10.5px !important;
+}
+@media (max-width: 991px) {
+    .font-size-for-mobile-18 {
+        font-size: 14px !important;
+    }
+    .font-size-for-mobile-18-5 {
+        font-size: 18.5px !important;
+    }
+    .font-size-for-mobile-17 {
+      font-size: 14px !important;
+    }
+    .font-size-for-mobile-17-5 {
+        font-size: 14px !important;
+    }
+    .font-size-for-mobile-16 {
+      font-size: 14px !important;
+    }
+    .font-size-for-mobile-16-5 {
+      font-size: 14px !important;
+    }
+    .font-size-for-mobile-15 {
+      font-size: 14px !important;
+    }
+    .font-size-for-mobile-15-5 {
+      font-size: 14px !important;
+    }
+    .font-size-for-mobile-14 {
+      font-size: 14px !important;
+    }
+    .font-size-for-mobile-14-5 {
+      font-size: 14px !important;
+    }
+    .font-size-for-mobile-13 {
+      font-size: 13px !important;
+    }
+    .font-size-for-mobile-13-5 {
+      font-size: 13px !important;
+    }
+    .font-size-for-mobile-12 {
+      font-size: 12px !important;
+    }
+    .font-size-for-mobile-12-5 {
+      font-size: 12px !important;
+    }
+    .font-size-for-mobile-11 {
+      font-size: 11px !important;
+    }
+    .font-size-for-mobile-11-5 {
+      font-size: 11px !important;
+    }
+    .font-size-for-mobile-10 {
+      font-size: 10px !important;
+    }
+    .font-size-for-mobile-10-5 {
+      font-size: 10px !important;
+    }
+}
+
+
+.info-block-mobile {
+    /*margin-top: 25px;*/
+}
+.info-block-mobile-row {
+    margin-top: -25px;
+    margin-left: -11px;
+}
+.info-block-mobile-text {}
+.info-block-mobile-1 {
+
+}
+.info-block-mobile-top {
+
+}
+
+.defaultcircle {
+    display: inline-block;
+    padding: 40px;
+    width: 195px;
+    height: 195px;
+    line-height: 50px;
+    border: 2px solid #aeaeae;
+    border-radius: 50%;
+    font-size: 13pt;
+    transition-delay: 0.050s;
+    margin: 21px;
+}
+.defaultcircle:hover {
+    background-color: #f8f8f8;
+    transition-delay: 0.050s;
+}
+.defaultsize {
+    font-size: 23pt;
+}
+
+@media (max-width: 991px) {
+    .info-block-mobile {
+        margin: 0px 0px 15px 0px !important;
+    }
+    .info-block-mobile-row {
+        margin-top: 0px !important;
+        margin-left: -11px;
+    }
+    .info-block-mobile-text {
+      font-size: 76%;
+    }
+    .info-block-mobile-1 {
+        margin-top: -70px !important;
+    }
+    .info-block-mobile-top {
+      margin-top: -50px !important;
+    }
+}
