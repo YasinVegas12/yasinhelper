@@ -1,0 +1,58 @@
+.page {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Фиксируем позицию body, которую меняет панель гугла*/
+
+.page_fix {
+    top: 0 !important;
+    position: static !important;
+}
+
+/* Прячем панель гугла */
+
+.skiptranslate {
+    display: none !important;
+}
+
+/* language */
+
+.language {
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+}
+
+.language__img {
+    margin: 2px;
+    cursor: pointer;
+    opacity: .5;
+}
+
+.language__img:hover,
+.language__img_active {
+    opacity: 1;
+}
+
+/* content */
+
+.content {
+    /*text-align: center;*/
+    /*margin: auto;*/
+}
+
+.goog-text-highlight {
+    background-color: #fff0 !important;
+    -webkit-box-shadow: 2px 2px 4px #9999aa00 !important;
+    -moz-box-shadow: 2px 2px 4px #9999aa00 !important;
+    box-shadow: 2px 2px 4px #9999aa00 !important;
+    box-sizing: border-box !important;
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    position: relative !important;
+}
