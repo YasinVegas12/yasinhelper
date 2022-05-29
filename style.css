@@ -1,0 +1,42 @@
+body {
+    background-image: url(fon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ccc;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    height: 100%
+}
+.widget {
+    margin: 0 auto;
+    width: 700px;
+    margin-top: 50px;
+    background-color: #ccc;
+    /*-background-color: #222D3A;*/
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.3);
+}
+.header {
+    background-color: #eee;
+    height: 40px;
+    color: #555;
+    text-align: center;
+    line-height: 40px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    font-weight: 400;
+    text-shadow: 1.5em;
+    border-bottom: 1px solid #eaeaea;
+}
+.footer-block {
+    background-color: #231f20;
+    color: white;
+    display: block;
+    height: 150px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
